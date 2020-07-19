@@ -1,0 +1,134 @@
+@import "./reset.css"all;
+@import "../fonts/stylesheet.css"all;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  /* Colors */
+  --primay-color: #18CFAB;
+  --second-color: #717171;
+  --dark-grey: #777777;
+  --light-grey: #BBBBBB;
+
+  /* Typography */
+  --primary-font: 'Montserrat', sans-serif;
+  --primary-size: 3.6rem;
+  --second-size: 1.5rem;
+}
+
+.container {
+  max-width: 116rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--light-grey);
+  background-image: url("../img/Sections_background/section-1(header).jpg");
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+.header-logo {
+  display: flex;
+  padding: 2.6rem 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-link .logo-icon {
+  margin-right: 0.6rem;
+}
+
+.logo-link .logo-text {
+  font-family: var(--primary-font);
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.logo-text span {
+  font-weight: 800;
+  color: var(--primay-color);
+}
+
+.hero-bg .main-header {
+  background-color: rgba(94, 93, 88, 0.6);
+  /* min-height: 12rem; */
+}
+
+.menu-list {
+  display: flex;
+  height: 100%;
+}
+
+.menu-list .menu-item {
+  margin-right: 2.1rem;
+  display: flex;
+}
+
+.menu-list .menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: #b8b8b8;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.menu-link::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  background-color: var(--primay-color);
+}
+
+.menu-link:hover::after {
+  display: block;
+
+}
+
+.header-menu {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
