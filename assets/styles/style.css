@@ -93,6 +93,7 @@ html {
 .menu-list .menu-item {
   margin-right: 2.1rem;
   display: flex;
+  position: relative;
 }
 
 .menu-list .menu-item:last-child {
@@ -108,10 +109,14 @@ html {
   text-transform: uppercase;
   align-items: center;
   display: flex;
-  position: relative;
+  align-self: center;
 }
 
-.menu-link::after {
+.menu-link:hover .menu-list::after{
+  display: block;
+}
+
+ .menu-link::after {
   content: "";
   display: none;
   position: absolute;
@@ -120,11 +125,18 @@ html {
   left: 0;
   height: 0.2rem;
   background-color: var(--primay-color);
-}
+}  
 
 .menu-link:hover::after {
   display: block;
-
+}
+.menu-item:last-child > .menu-link:hover::after{
+  display: none;
+}
+.menu-link .icon{
+  width: 20px;
+  height: 20px;
+  fill: red;
 }
 
 .header-menu {

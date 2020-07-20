@@ -1,0 +1,46 @@
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 16 17"  xmlns="http://www.w3.org/2000/svg" id="plus">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 6.997H10v-5.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v5.5H.5a.5.5 0 0 0-.5.501v3a.5.5 0 0 0 .5.5H6v5.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-5.5h5.5a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" fill="#fff"></path>
+  </symbol>
+  <symbol viewBox="0 0 22 20"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="search">
+    <path fill="url(#pattern0)" d="M.909 0H22v20H.909z"></path>
+    <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0" transform="matrix(.04545 0 0 .04793 0 -.027)"></use>
+      </pattern>
+      <image id="image0" width="22" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAhlJREFUOI2l1EuITmEcx/HP+5oYJZdZyG02FqIkJeUSwmNyFzGUFNnY2ShZ2pCFLGxkQVm4pERuMYfkLs2GkoUsyEhWcsl1WDznzfM+HWbkt3r+//M/3+ec/63W1dUl0yBMxyoEjMUA9OAWzuI2PkEIIX8ftGT2JOzHgvKCVG2YjG24gV14UElFPTnPxiUsyaA/8C2xa5iPi+VfVapWpmIirqI9eXYdF/CsBI9HRwZ7h0UhhIdV4FYcx+rS9xF7cBDvs/iB2IzdGFX67qMjhNAUW8c8LE18B0pwDoWvOIztyuJhBpbngXUs8zun17CvApjrNM4k9oYq8KzEPocP/QD/FAvdW9rTiqIYnIMbufqCp/2ANvQ0+YhWjM7BaWv16r++JvG9+J6DX5XnQZjwD+BJGFqeP+B1Du5O7IViS/WlmjidjQF7EkJIh0hdHIKGlmFLP8DzsSmxj+UBdVwW24xYhL3o/As04BCGlHY3zudBLfiMneJIt2EETmElruCRONJTMBdbNaerDVNxLwXXkrW5BkcwLLv8nVj14WJuq9SDzhDCnYYj3W5nsBg3s5eGlX+RQrv97iYYgxNFUcypAhMXygpsFIv6Em/xBs/FaVsvbrn1mlusHSeLophFcyqq1IqRYvP3VDyfKe6NsYnvJdblX5zrM178AUosWKfmtLTjaF/gPhVCuIu12eXj/htcwu+LXfVY7KIdvwB/ZIC2Fm1HqgAAAABJRU5ErkJggg=="></image>
+    </defs>
+  </symbol>
+  <symbol viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" id="square">
+    <path fill="#fff" d="M0 0h12v11H0z"></path>
+  </symbol>
+  <symbol viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-left">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.508 12.508l1.305-1.402-4.288-4.61L7.813 1.89 6.508.487.915 6.497l5.593 6.01z" fill="#BBB"></path>
+  </symbol>
+  <symbol viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow-right">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.492.488L.187 1.89l4.288 4.607-4.288 4.609 1.305 1.402 5.593-6.01L1.492.487z" fill="#fff"></path>
+  </symbol>
+  <symbol viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg" id="blockqouates">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.492.488L.187 1.89l4.288 4.607-4.288 4.609 1.305 1.402 5.593-6.01L1.492.487z" fill="#fff"></path>
+  </symbol>
+  <symbol viewBox="0 0 99 77" fill="none" xmlns="http://www.w3.org/2000/svg" id="computer">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M81.362 6.361H19.188v11.176H13.71V.997h73.131V31.08h-5.48V6.36zM38.797 76.996H0V19.974h38.797v57.022zm-20.449-4.693c0 1.007.836 1.835 1.869 1.835s1.873-.828 1.87-1.835c0-1.009-.837-1.83-1.87-1.83-1.033 0-1.869.821-1.869 1.83zm14.843-46.834H5.61v42.073h27.577l.002-42.073zm8.106 17.403h28.814v5.366H41.297v-5.366zm31.646 33.233V33.162H99v42.943H72.943zm14.236-40.548a.622.622 0 0 0-.629-.616.622.622 0 0 0-.63.616c0 .338.282.62.63.62a.626.626 0 0 0 .629-.62zm3.119 1.444h-7.496v.589h7.496V37zM84.8 72.775c0 .813.676 1.475 1.504 1.475s1.504-.662 1.504-1.475c0-.814-.676-1.471-1.504-1.471-.832 0-1.504.662-1.504 1.471zm-7.676-3.547c3.355.027 10.928.003 17.695-.035V39.699l-17.695.004V69.23zM41.297 50.434H70.11v7.617H41.297v-2.94h19.314v-1.424H41.297v-3.253z"
+      fill="#fff"></path>
+  </symbol>
+  <symbol viewBox="0 0 58 98" fill="none" xmlns="http://www.w3.org/2000/svg" id="diamond">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7 35.976l.011-15.848c0-1.83.686-3.543 1.94-4.822 1.393-1.406 3.386-2.21 5.487-2.21 1.64 0 3.215.511 4.436 1.42 1.48 1.105 2.401 2.774 2.594 4.68 0 .043.847 8.309 1.607 15.707a18.247 18.247 0 0 0 8.917-15.707c0-10.053-8.06-18.2-18.004-18.2-9.945 0-18.005 8.147-18.005 18.2-.01 7.539 4.534 14.017 11.017 16.78zm.718 59.855c0 1.19.965 2.165 2.144 2.165H50.24c1.179 0 2.143-.976 2.143-2.165v-4.965H16.418v4.965zm38.249-43.81C56.66 52.668 58 54.542 58 56.655l-.022 17.269c0 2.568-.686 5.08-1.982 7.28l-3.633 6.208H16.397C6.387 77.163 1.307 66.234.536 61.543 0 58.325 2.218 56.17 4.683 56.17c1.404 0 2.894.692 4.008 2.306.354.521.74 1.084 1.169 1.7 3.166 4.636 6.415 4.733 7.898 4.778l.053.001h.032c.044 0 .097 0 .14-.012h.021c.515-.074.89-.509.89-1.029l.021-43.798c-.01-2.459 2.133-3.78 4.212-3.78 1.833 0 3.612 1.028 3.837 3.196 0 .044 2.765 27.072 2.775 27.157v.013h.011c.761-.684 2.025-1.083 3.472-1.083a8.99 8.99 0 0 1 1.661.16c1.833.37 13.836 4.28 19.784 6.241z"
+      fill="#18CFAB"></path>
+  </symbol>
+  <symbol viewBox="0 0 58 98" fill="none" xmlns="http://www.w3.org/2000/svg" id="finger">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7 35.976l.011-15.848c0-1.83.686-3.543 1.94-4.822 1.393-1.406 3.386-2.21 5.487-2.21 1.64 0 3.215.511 4.436 1.42 1.48 1.105 2.401 2.774 2.594 4.68 0 .043.847 8.309 1.607 15.707a18.247 18.247 0 0 0 8.917-15.707c0-10.053-8.06-18.2-18.004-18.2-9.945 0-18.005 8.147-18.005 18.2-.01 7.539 4.534 14.017 11.017 16.78zm.718 59.855c0 1.19.965 2.165 2.144 2.165H50.24c1.179 0 2.143-.976 2.143-2.165v-4.965H16.418v4.965zm38.249-43.81C56.66 52.668 58 54.542 58 56.655l-.022 17.269c0 2.568-.686 5.08-1.982 7.28l-3.633 6.208H16.397C6.387 77.163 1.307 66.234.536 61.543 0 58.325 2.218 56.17 4.683 56.17c1.404 0 2.894.692 4.008 2.306.354.521.74 1.084 1.169 1.7 3.166 4.636 6.415 4.733 7.898 4.778l.053.001h.032c.044 0 .097 0 .14-.012h.021c.515-.074.89-.509.89-1.029l.021-43.798c-.01-2.459 2.133-3.78 4.212-3.78 1.833 0 3.612 1.028 3.837 3.196 0 .044 2.765 27.072 2.775 27.157v.013h.011c.761-.684 2.025-1.083 3.472-1.083a8.99 8.99 0 0 1 1.661.16c1.833.37 13.836 4.28 19.784 6.241z"
+      fill="#18CFAB"></path>
+  </symbol>
+  <symbol viewBox="0 0 60 97" fill="none" xmlns="http://www.w3.org/2000/svg" id="light">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M48 75.997a2.998 2.998 0 0 1-3 2.999H15c-1.658 0-3-1.342-3-2.999 0-1.659 1.342-3 3-3h30c1.658 0 3 1.341 3 3zm-3 6H15c-1.658 0-3 1.34-3 3a2.997 2.997 0 0 0 3 2.999h30c1.658 0 3-1.34 3-3 0-1.659-1.342-3-3-3zM24 96.996h12c3.316 0 6-2.683 6-6H18c0 3.317 2.684 6 6 6zm36-66c0 16.312-9.832 18.21-11.678 36 0 1.659-1.342 3-3 3H14.678c-1.659 0-3-1.341-3-3h-.006C9.832 49.206 0 47.308 0 30.996c0-16.57 13.43-30 30-30s30 13.43 30 30zm-17.854-9c-34.875 8.25-18 30-18 30 0-12 8.813-14.813 9-14.437-6.187 6-9 26.437-9 26.437h6v-12c17.063.938 12-27.938 12-30z"
+      fill="#18CFAB"></path>
+  </symbol>
+  <symbol viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="link">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.913 2.728L12.095.891A2.058 2.058 0 0 0 9.177.883l-2.018 2.01a2.077 2.077 0 0 0-.008 2.928l1.153-1.132c-.117-.36.026-.774.312-1.06l1.283-1.277a1.028 1.028 0 0 1 1.46.002l1.092 1.104c.402.405.4 1.06-.004 1.465l-1.284 1.28c-.271.27-.717.419-1.063.323L8.97 7.66c.805.813 2.11.816 2.919.01l2.015-2.01c.81-.806.813-2.12.01-2.93zm-7.387 7.364c.096.352-.057.808-.335 1.086l-1.199 1.197a1.048 1.048 0 0 1-1.485-.006l-1.114-1.121a1.06 1.06 0 0 1 .005-1.493l1.2-1.197c.292-.292.712-.438 1.08-.314l1.156-1.172a2.098 2.098 0 0 0-2.973-.009L.915 9.004a2.117 2.117 0 0 0-.008 2.985l1.851 1.873a2.1 2.1 0 0 0 2.973.008l1.945-1.941a2.119 2.119 0 0 0 .01-2.985l-1.16 1.148zm-.268-.529a.694.694 0 0 1-.996-.005.732.732 0 0 1 .004-1.018l3.325-3.38a.694.694 0 0 1 .994.003.73.73 0 0 1-.003 1.019l-3.324 3.38z"
+      fill="#1FDAB5"></path>
+  </symbol>
+</svg>
