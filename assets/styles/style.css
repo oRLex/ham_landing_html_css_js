@@ -663,7 +663,17 @@ News
 .news-content{
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
+.news-content:hover .news-date,
+.news-content:focus .news-date{
+background-color: var(--primay-color);
+}
+.news-content:hover .news-heading,
+.news-content:focus .news-heading{
+  color: var(--primay-color)
+}
+
 .news-content .news-figure{
   position: relative;
   max-width: 26.3rem;
@@ -685,6 +695,7 @@ News
   padding: 1.4rem 0.4rem;
   align-items: center;
   background-color: #203E38;
+  transition: 0.3s ease-in-out;
 }
 .news-date span{
   font-family: var(--primary-font);
@@ -692,3 +703,87 @@ News
   color: #fff;
 }
 
+.news-heading{
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  color: var(--second-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: 800;
+  transition: 0.3s ease-in-out;
+
+}
+.news-data{
+  display: flex;
+  margin-left: 1.2rem;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  color: #777777;
+}
+
+.data-item{
+  padding-right: 1rem;
+  border-right: 0.1rem solid #777777;
+}
+
+.data-item:last-child{
+  padding-left: 1rem;
+  border: none;
+}
+
+
+
+
+/* 
+Testimonials
+ */
+.testimonials{
+  padding-top: 9.8rem;
+  padding-bottom: 10.4rem;
+  z-index: 10;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/Sections_background/section-3.jpg");
+  background-color: rgba(0, 0, 0, 0.8);
+
+  background-blend-mode: multiply;
+}
+
+/* .testimonials::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* .testimonials > *{
+  z-index: 10;
+} */
+
+.testimonials .section-heading .heading-text{
+  color: #ffffff;
+}
+
+.slider-container{
+  overflow: hidden;
+  background-color: #00CBF6;
+}
+.slider-track{
+  background-color: rgba(94, 93, 88, 0.2);
+  transition: 0.3s ease-in-out;
+  display: flex;
+}
+
+.slider-item{
+  height: 100px;
+  min-width: 100%;
+}
+
+.active-dot{
+  color: #717171;
+}
