@@ -20,72 +20,91 @@ tabs.addEventListener('click', handleTabs);
 // 
 // Slider
 // 
-let position = 0;
-const sliderContainer = document.querySelector('.slider-container');
-const sliderTrack = document.querySelector('.slider-track');
-const sliderItems = document.querySelectorAll('.slider-item');
+const slider = document.querySelector('.slider-track');
 const btnPrev = document.querySelector('.arrow-left');
 const btnNext = document.querySelector('.arrow-right');
-const sliderDot = document.querySelector('.slider-dots');
-const itemWidth = document.querySelector('.slider-item').clientWidth;
+const dots = document.querySelector('.slider-dots');
+const slides =document.querySelectorAll('.slider-item');
+
+let position = 0;
+let index = 0;
+let dot_index = 0;
+let size = slides[index].clientWidth;
 
 
-const slideLeft = function(event){
-  event.preventDefault();
-  position += itemWidth;
-
-  setPosition();
-  checkBtn();
-};
-
-const slideRight = function(event){
-  event.preventDefault();
-  position -= itemWidth;
-
-  setPosition();
-  checkBtn();
-};
-
-const setPosition = () =>{
-  sliderTrack.style.cssText = `transform: translateX(${position}px)`;
-};
-
-const checkBtn = () => {
-  if(position === 0){
-    btnPrev.disabled = true;
-  } else{
-    btnPrev.disabled = false;
+const updateSlide = function(){
+  slider.style.transform = `translateX(${(-size * index)}px)`;
+  Array.from(dots.children).forEach( element => element.classList.remove('active-dot'));
+  if (dots.children[dot_index].tagName === 'A') {
+    dots.children[dot_index].classList.add('active-dot'); 
   }
-  
-  console.log(position)
-  if (position <= -(sliderItems.length -1) * itemWidth) {
-    btnNext.disabled = true;
+  if (dot_index === slides.length -1) {
+    btnNext.setAttribute('disabled', 'true');
+  }else{
+    btnNext.removeAttribute('disabled');
+  }
+  if (dot_index === 0) {
+    btnPrev.setAttribute('disabled', 'true');
+
+  }else{
+    btnPrev.removeAttribute('disabled');
+  }
+};
+
+const slide = function(){
+    slider.style.transition = 'transform .5s easy-in-out';
+    updateSlide();
+};
+
+const checkBtn = function(){
+  if (position === 0) {
+   btnPrev.setAttribute('disabled', 'true');
   } else {
-    btnNext.disabled = false;
+    btnPrev.removeAttribute('disabled');
   }
-
+  if(position === -(slides.length -1) * slides[0].clientWidth){
+    btnNext.setAttribute('disabled', 'true');
+  } else{
+    btnNext.removeAttribute('disabled');
+  }
 };
+
+const setPosition = function(){
+  if (this.classList.contains('arrow-left')) {
+    index--;
+    position += size;
+    if(dot_index === 0){
+      dot_index = 4;
+    } else{
+      dot_index--;
+    }
+  } else if(this.classList.contains('arrow-right')){
+    index++;
+    position -= size;
+    if(dot_index === 4){
+      dot_index = 0;
+    } else{
+      dot_index++;
+    }
+  }
+  checkBtn();
+  slide();
+  
+};
+
+const dotFunc = function(event){
+  event.preventDefault(); 
+  if (event.target.tagName === 'A') {
+    let i = parseInt(event.target.dataset.triger);
+    index = i;
+    dot_index = i;
+    slide();
+  }
+};
+
+updateSlide();
 checkBtn();
 
-btnPrev.addEventListener('click', slideLeft);
-btnNext.addEventListener('click', slideRight);
-
-
-
-sliderDot.addEventListener('click', function (event) {
-  event.preventDefault();
-  for (const el of this.children) {
-    el.classList.remove('active-dot');
-  }
-  event.target.classList.toggle('active-dot');
-  const newArray = Array.from(sliderItems).map((e)=> e).filter((i)=> {
-    if (i.dataset.slide === event.target.dataset.triger) {
-      console.log(i.documentOffsetLeft)
-      position -= i.offsetLeft;
-      console.log(position)
-      setPosition();
-    }
-  });
-
-
-});
+btnNext.addEventListener('click', setPosition);
+btnPrev.addEventListener('click', setPosition);
+dots.addEventListener('click', dotFunc);
