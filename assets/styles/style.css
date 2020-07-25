@@ -771,19 +771,99 @@ Testimonials
 
 .slider-container{
   overflow: hidden;
-  background-color: #00CBF6;
 }
 .slider-track{
-  background-color: rgba(94, 93, 88, 0.2);
   transition: 0.3s ease-in-out;
   display: flex;
 }
 
 .slider-item{
-  height: 100px;
+  height: auto;
   min-width: 100%;
 }
 
 .active-dot{
   color: #717171;
+}
+
+.testimonial-content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 8rem;
+}
+.testimonial-content::before{
+  content: url(../icons/png/blockq.png);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.testimonial-text{
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #BBBBBB;
+  line-height: 3rem;
+  margin-bottom: 3.7rem;
+}
+.testimonial-author{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.author-credentials{
+  font-family: var(--primary-font);
+  color: var(--primay-color);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.author-position{
+  font-family: var(--primary-font);
+  color: #BBBBBB;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.author-img{
+  width: 14.3rem;
+  height: 14.3rem;
+  border-radius: 50%;
+  border: .6rem solid rgba(31, 218, 181, 0.3);
+}
+
+.slider-controls{
+  margin-top: 5.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-dots{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.slider-dot{
+  margin-right: 2.7rem;
+}
+.slider-dot.active-dot{
+margin-bottom: 1rem;
+top: -10px;
+}
+
+.slider-dot:last-child{
+  margin-right: 0;
+}
+.dot-img{
+  width: 6rem;
+  height: 6rem;
+  border: .3rem solid rgba(31, 218, 181, 0.3);
+  border-radius: 50%;
 }

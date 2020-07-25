@@ -35,6 +35,8 @@ let size = slides[index].clientWidth;
 const updateSlide = function(){
   slider.style.transform = `translateX(${(-size * index)}px)`;
   Array.from(dots.children).forEach( element => element.classList.remove('active-dot'));
+  console.log(dots.children[dot_index])
+ console.log(dots)
   if (dots.children[dot_index].tagName === 'A') {
     dots.children[dot_index].classList.add('active-dot'); 
   }
@@ -94,7 +96,8 @@ const setPosition = function(){
 
 const dotFunc = function(event){
   event.preventDefault(); 
-  if (event.target.tagName === 'A') {
+  console.log(event.target.parentElement.tagName)
+  if (event.target.parentElement.tagName === 'A') {
     let i = parseInt(event.target.dataset.triger);
     index = i;
     dot_index = i;
