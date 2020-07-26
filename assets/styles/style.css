@@ -925,6 +925,7 @@ Testimonials
 
 .slider-dots {
   margin-left: 3rem;
+  display: flex;
   margin-right: 3rem;
 }
 
