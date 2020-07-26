@@ -126,6 +126,88 @@ var msnry = new Masonry(gallary, {
   transitionDuration: '0.2s'
 });
 
+const pictureAction = document.querySelector('#addPicture');
+const gallarySection = document.querySelector('.gallary');
+
+const gallaryList = [{
+    img: './assets/img/gallary/7.jpg'
+  },
+  {
+    img: './assets/img/gallary/2.jpg'
+  },
+  {
+    img: './assets/img/gallary/3.jpg'
+  },
+  {
+    img: './assets/img/gallary/4.jpg'
+  },
+  {
+    img: './assets/img/gallary/5.jpg'
+  },
+  {
+    img: './assets/img/gallary/IA-Hourses-6 1.jpg'
+  },
+  {
+    img: './assets/img/gallary/IA-billionares-6 1.jpg'
+  },
+  {
+    img: './assets/img/gallary/9.jpg'
+  },
+]
+
+const createGalleryItem = function (event) {
+  event.preventDefault();
+  const gridList = gallaryList.map(element => {
+    let gridItem = `
+        <div class="gallary-content">
+          <img class="gallary-img" src="${element.img}" alt=""/>
+          <div class="gallary-action">
+            <a href="#" class="gallary-link"><i class="icon-gallary-seach"></i></a>
+            <a href="#" class="gallary-link"><i class="icon-gallary-expand"></i></a>
+          </div>
+        </div>
+    `
+    return gridItem;
+  })
+  addGallery(gridList);
+
+};
+
+const addGallery = function (items) {
+  const elems = [];
+  const fragment = document.createDocumentFragment();
+
+  pictureAction.remove();
+  const loader = document.createElement('div');
+  const gif = document.createElement('img');
+  gif.src = './assets/icons/Pulse-1s-200px.gif';
+  loader.classList.add('loader');
+  loader.prepend(gif);
+  gallarySection.append(loader);
+  setTimeout(function () {
+    loader.remove();
+    items.forEach(item => {
+      const gridWrap = document.createElement('div');
+      gridWrap.classList.add('grid-item');
+      gridWrap.innerHTML = item;
+      fragment.appendChild(gridWrap)
+      elems.push(gridWrap);
+    });
+    // append elements to container
+    gallary.appendChild(fragment);
+    // add and lay out newly appended elements
+    msnry.appended(elems);
+    msnry.layout();
+    imagesLoaded(gallary).on('progress', function () {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+  }, 2500);
+};
+
+
+pictureAction.addEventListener('click', createGalleryItem)
+
 
 /*
 WORK FILTER
@@ -215,14 +297,12 @@ const filterCards = [
 
 const addItems = function (list) {
   addItem.remove();
-
   const loader = document.createElement('div');
   const gif = document.createElement('img');
   gif.src = './assets/icons/Pulse-1s-200px.gif';
   loader.classList.add('loader');
   loader.prepend(gif);
   work.append(loader);
-
   setTimeout(function () {
     loader.remove();
     list.forEach(element => {
@@ -230,7 +310,6 @@ const addItems = function (list) {
     });
     doFilter();
   }, 2500);
-
 };
 
 const createFilterCard = function (event) {
@@ -251,7 +330,6 @@ const createFilterCard = function (event) {
     `;
     return card;
   });
-
   addItems(li);
 };
 
@@ -270,7 +348,6 @@ const doFilter = function () {
         return item.style.cssText = 'display: none';
       }
     });
-
   }
 };
 
@@ -283,7 +360,10 @@ const handleTriger = function (event) {
   doFilter();
 };
 
-
-
 addItem.addEventListener('click', createFilterCard);
 filterTrigger.addEventListener('click', handleTriger);
+
+
+/*
+GALLRY 
+*/
