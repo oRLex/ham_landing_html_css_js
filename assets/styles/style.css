@@ -116,7 +116,7 @@ html {
 }
 
 .icon-link {
-  background-image: url("../icons/png/search.png");
+  background-image: url("../icons/png/link-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -659,6 +659,7 @@ html {
   opacity: 1;
 }
 
+
 .filter-desc .filter-action {
   display: flex;
   margin-bottom: 3rem;
@@ -684,6 +685,10 @@ html {
 
 .filter-link:hover {
   background-color: var(--primary-color);
+}
+
+.filter-link:hover .icon-link {
+  background-image: url("../icons/png/link.png");
 }
 
 .filter-link:hover .icon-square {
