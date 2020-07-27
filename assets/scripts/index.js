@@ -362,8 +362,3 @@ const handleTriger = function (event) {
 
 addItem.addEventListener('click', createFilterCard);
 filterTrigger.addEventListener('click', handleTriger);
-
-
-/*
-GALLRY 
-*/
